@@ -36,12 +36,12 @@ var title=data.title;
 var heading=data.heading;
 var date=data.date;
 var content=data.content;
-var htmlTemplate = `
+var htmlTemplate =`
 <html>
  <head>
- `+
-  $(title)
-  +`
+ 
+  ${title}
+ 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/ui/style.css" rel="stylesheet" />
 </head>
@@ -51,17 +51,14 @@ var htmlTemplate = `
         <a href="/">Home</a>
     </div>
     <hr>
-    <div>`+
-        $(heading)
-        `+
+    <div>
+       ${heading}
     </div>
-    <div>`+
-      $(date)
-        +`
-    </div>
-    <div>`+
-      $(content)
-        +`
+    <div>
+      ${date}
+     </div>
+    <div>
+      ${content}
     </div>
     </div>
 </body>
