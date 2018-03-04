@@ -4,6 +4,14 @@ var element=document.getElementById('main-text');
 element.innerHTML='New Value';
 //changing the img position
 var img=document.getElementById('logo');
+var margin=0;
+function moveRight()
+{
+     margin=margin+10;
+    img.style.marginLeft=margin+'px';
+  
+}
 img.onclick=function(){
-    img.style.marginLeft='100px';
+    var interval=setInterval(moveRight,100);
+   
 };
