@@ -15,9 +15,15 @@ img.onclick=function(){
     var interval=setInterval(moveRight,100);
    
 };*/
-var count=document.getElementById('count');
-counter.onclick=function()
+var button=document.getElementById('counter');
+button.onclick=function()
 {
-    count=count+1;
-    count.innerHTMl=count;
+    //Make a request to the counter end point
+    
+    //Capture the response and store it in a variable
+    
+    //render the variable in the correct span
+    counter=counter+1;
+    var span=document.getElementById('count');
+    span.innerHTML=counter.toString();
 }
