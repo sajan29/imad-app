@@ -16,6 +16,6 @@ button.onclick=function()
     };
     
     //render the variable in the correct span
-    request.open("GET", "sajanshaw387.imad.hasura-app.io", true);
+    request.open("GET", "http://sajanshaw387.imad.hasura-app.io", true);
     request.send();   
 };
