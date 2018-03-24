@@ -1,4 +1,4 @@
-console.log('Loaded!');
+/*console.log('Loaded!');
 //changing the main text on index.html
 var element=document.getElementById('main-text');
 element.innerHTML='New Value';
@@ -14,4 +14,10 @@ function moveRight()
 img.onclick=function(){
     var interval=setInterval(moveRight,100);
    
-};
+};*/
+var count=document.getElementById('count');
+counter.onclick=function()
+{
+    count=count+1;
+    count.innerHTMl=count;
+}
