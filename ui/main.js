@@ -25,8 +25,7 @@ button.onclick=function()
 var submit=document.getElementById("submit_btn");
 submit.onclick=function(){
     
-    var nameInput=document.getElementById("name");
-    var input=nameInput.value;
+   
     var request=new XMLHttpRequest();
     //Capture the response and store it in a variable
     request.onreadystatechange = function() {
@@ -47,6 +46,8 @@ submit.onclick=function(){
         }
       }
     };
+    var nameInput=document.getElementById("name");
+    var input=nameInput.value;
     
     //render the variable in the correct span
     request.open("GET", "http://sajanshaw387.imad.hasura-app.io/submit-name?name="+name, true);
