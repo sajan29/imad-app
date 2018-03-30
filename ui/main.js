@@ -24,7 +24,7 @@ button.onclick=function()
 var nameInput=document.getElementById("name");
 var input=nameInput.value;
 var submit=document.getElementById("submit_btn");
-var output=submit.onclick(function(){
+submit.onclick=function(){
     var names=['name1','name2','name3','name4'];
     var list="";
     for(var i=0;i<names.length;i++)
@@ -34,4 +34,4 @@ var output=submit.onclick(function(){
     var ul=document.getElementById('namelist');
     ul.innerHTML=list;
     
-});
+};
