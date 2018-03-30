@@ -50,7 +50,7 @@ submit.onclick=function(){
     var input=nameInput.value;
     
     //render the variable in the correct span
-    request.open("GET", "http://sajanshaw387.imad.hasura-app.io/submit-name?name="+name, true);
+    request.open("GET", "http://sajanshaw387.imad.hasura-app.io/submit-name?name="+input, true);
     request.send(null);   
    
     
