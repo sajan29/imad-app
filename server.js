@@ -15,50 +15,7 @@ var config={
 
 var app = express();
 app.use(morgan('combined'));
-var articles={
-    'article-one':{
-        title:'article-one|sajan',
-        heading:'article-one',
-        date:'13 Feb 2018',
-        content:`
-        <p>
-          This is the content of the Article-one.This is the content of the Article-one.This is the content of the Article-one.
-          This is the content of the Article-one.This is the content of the Article-one.This is the content of the Article-one.
-          This is the content of the Article-one.This is the content of the Article-one.This is the content of the Article-one.
-       </p>
-        <p>
-          This is the content of the Article-one.This is the content of the Article-one.This is the content of the Article-one.
-          This is the content of the Article-one.This is the content of the Article-one.This is the content of the Article-one.
-          This is the content of the Article-one.This is the content of the Article-one.This is the content of the Article-one.
-       </p>
-        <p>
-          This is the content of the Article-one.This is the content of the Article-one.This is the content of the Article-one.
-          This is the content of the Article-one.This is the content of the Article-one.This is the content of the Article-one.
-          This is the content of the Article-one.This is the content of the Article-one.This is the content of the Article-one.
-       </p>
-        <p>
-          This is the content of the Article-one.This is the content of the Article-one.This is the content of the Article-one.
-          This is the content of the Article-one.This is the content of the Article-one.This is the content of the Article-one.
-          This is the content of the Article-one.This is the content of the Article-one.This is the content of the Article-one.
-       </p>`
-        
-    },
-   'article-two':{
-        title:'article-two|sajan',
-        heading:'article-two',
-        date:'13 Feb 2018',
-        content:`
-        <p>This is the content of the second article</p>`
-     },
-    'article-three':{
-        title:'article-three|sajan',
-        heading:'article-threeo',
-        date:'13 Feb 2018',
-        content:`
-        <p>This is the content of the third article</p>`
-     }
-    
-};
+
 function createTemplate(data){
 var title=data.title;
 var heading=data.heading;
