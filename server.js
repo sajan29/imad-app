@@ -140,7 +140,7 @@ app.post('/create-user',function(req,res){
       
       if(err)
       {
-          req.send.status(500)(err.toString());
+          req.status(500).send(err.toString());
       }
       else
       {
@@ -159,13 +159,13 @@ app.post('/login',function(req,res){
       
       if(err)
       {
-          req.send.status(500)(err.toString());
+          req.status(500).send(err.toString());
       }
       else
       {
           if(result.rows.length===0)
           {
-                req.send.status(403)('invalid username or password'); 
+                req.status(403).send('invalid username or password'); 
           }
           else
           {
@@ -178,7 +178,7 @@ app.post('/login',function(req,res){
               }
               else
               {
-                   req.send.status(403)('Forbidden'); 
+                   req.status(403).send('Forbidden'); 
               }
           }
       }
