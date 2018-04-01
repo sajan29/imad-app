@@ -165,7 +165,7 @@ app.post('/login',function(req,res){
       {
           if(result.rows.length===0)
           {
-                req.status(403).send('invalid username or password'); 
+                req.send(403).send('invalid username or password'); 
           }
           else
           {
@@ -178,7 +178,7 @@ app.post('/login',function(req,res){
               }
               else
               {
-                   req.status(403).send('Forbidden'); 
+                   req.send(403).send('Forbidden'); 
               }
           }
       }
