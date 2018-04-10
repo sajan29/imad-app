@@ -203,6 +203,11 @@ app.get('/check-login',function(req,res){
         res.send('User not logged in');
     }
 });
+app.get('/logout',function(req,res){
+   
+   delete req.session.auth;
+   res.send('You are Logged out');
+});
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
